@@ -1,0 +1,26 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "cocogoose-regular";
+    src: url("../fonts/cocogoose-pro/cocogoose-pro-regular-trial.ttf");
+}
+
+@font-face {
+    font-family: "cocogoose-semilight";
+    src: url("../fonts/cocogoose-pro/cocogoose-pro-semilight-trial.ttf");
+}
+
+@font-face {
+    font-family: "hartone-softed";
+    src: url("../fonts/hartone-softed/hartone-softed.ttf");
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
