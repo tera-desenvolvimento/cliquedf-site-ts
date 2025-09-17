@@ -1,0 +1,52 @@
+.sub-banner-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 70px;
+}
+
+.sub-banner-container .infomercial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sub-banner-container .infomercial-wrapper .aligner {
+    display: flex;
+}
+
+.sub-banner-container .infomercial-wrapper .aligner.vertical {
+    flex-direction: column;
+}
+
+.sub-banner-container .infomercial-wrapper .aligner.vertical.main {
+    gap: 30px;
+}
+
+.sub-banner-container .infomercial-wrapper .aligner.horizontal {
+    gap: 20px;
+}
+
+.sub-banner-container .infomercial-wrapper .title {
+    font-family: "hartone-softed";
+    font-weight: 100;
+    color: #9CC748;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.sub-banner-container .infomercial-wrapper .icon {
+    height: 60px;
+    align-self: center;
+}
+
+.sub-banner-container .infomercial-wrapper .aligner b {
+    font-family: "hartone-softed";
+    font-weight: 100;
+    color: #9CC748;
+    font-size: 1.6rem;
+}
+
+.sub-banner-container .infomercial-wrapper .aligner span {
+    font-family: "poppins-regular";
+}

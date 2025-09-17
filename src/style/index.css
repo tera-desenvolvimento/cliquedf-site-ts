@@ -17,10 +17,25 @@ body, * {
 
 @font-face {
     font-family: "hartone-softed";
-    src: url("../fonts/hartone-softed/hartone-softed.ttf");
+    src: url("../fonts/hartone-softed/hartone-softed-new.ttf");
 }
 
 @font-face {
     font-family: "poppins-bold";
     src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "amsipro-ultra";
+    src: url("../fonts/amsiproultra/amsiproultra.otf");
+}
+
+@font-face {
+    font-family: "basic-sans";
+    src: url("../fonts/baisc-sans/basic-sans.otf");
 }

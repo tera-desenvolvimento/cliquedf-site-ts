@@ -1,0 +1,71 @@
+.footer-container {
+    margin-top: 30px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.footer-container .top-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container .top-wrapper .logo-container {
+    display: flex;
+}
+
+.footer-container .top-wrapper .logo-container img {
+    height: 100px;
+}
+
+.footer-container .top-wrapper .menu-container {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-container .top-wrapper .menu-container .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-container .top-wrapper .menu-container .menu-wrapper b, .footer-container .top-wrapper .contact-container .contact-wrapper b {
+    font-family: "poppins-bold";
+    color: #9CC748;
+}
+
+.footer-container .top-wrapper .menu-container .menu-wrapper a, .footer-container .top-wrapper .contact-container .contact-wrapper a {
+    font-family: "poppins-regular";
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: ease-in-out .2s all;
+}
+
+.footer-container .top-wrapper .menu-container .menu-wrapper a:hover {
+    color: #9CC748;
+}
+
+.footer-container .top-wrapper .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-container .top-wrapper .contact-container .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-container .bottom-wrapper {
+    text-align: center;
+}
+
+.footer-container .bottom-wrapper span {
+    font-family: "poppins-regular";
+    color: #ffffff;
+    font-size: 14px;
+}

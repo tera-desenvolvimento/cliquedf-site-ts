@@ -15,6 +15,20 @@
     font-family: "poppins-bold";
     font-size: 12px;
     color: #000000;
+    transition: ease-in-out .2s all;
+
+    path {
+        transition: ease-in-out .2s all;
+    }
+}
+
+.central-header a:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+
+    path:not(.dollar) {
+        fill: #ffffff;
+    }   
 }
 
 .header-container {
@@ -22,10 +36,13 @@
     display: flex;
     padding: 10px 40px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header-container .logo-wrapper .logo-img {
-    height: 60px;
+    height: 70px;
 }
 
 .header-container .menu-wrapper {
@@ -44,12 +61,12 @@
 .header-container .menu-wrapper .menu-list .menu-item a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     transition: ease-in-out .2s all;
 }
 
 .header-container .menu-wrapper .menu-list .menu-item a:hover {
-    color: #dddddd;
+    color: #9CC748;
 }
 
 .header-container .menu-wrapper .menu-list .menu-item.whatsapp-link a {
@@ -59,9 +76,20 @@
     background-color: #9CC748;
     padding: 10px 20px;
     border-radius: 25px;
+    border: 2px solid #9CC748;
+    transition: ease-in-out .2s all;
+
+    path {
+        transition: ease-in-out .2s all;
+    }
+    
 }
 
 .header-container .menu-wrapper .menu-list .menu-item.whatsapp-link a:hover {
-    color: #ffffff;
-    background-color: #7c9e38;
+    color: #9CC748;
+    background-color: #000000;
+
+    path {
+        stroke: #9CC748;
+    }
 }

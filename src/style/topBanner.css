@@ -1,0 +1,45 @@
+.top-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 30px;
+}
+
+.top-banner-container .banner-element {
+    background-image: url("../img/woman-laptop.svg");
+    height: 500px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-banner-container .banner-element .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: -webkit-fill-available;
+    justify-content: center;
+    padding-left: 90px;
+        border-radius: 50px;
+        background: linear-gradient(270deg, transparent, #0101019e);
+}
+
+.top-banner-container .banner-element .text-wrapper span {
+    font-family: "amsipro-ultra";
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.top-banner-container .banner-element .text-wrapper a {
+    font-family: "cocogoose-regular";
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #9CC748;
+    width: fit-content;
+    color: #ffffff;
+    border-radius: 20px;
+}
