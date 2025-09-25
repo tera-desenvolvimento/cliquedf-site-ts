@@ -6,7 +6,10 @@ const TopBanner = () => {
             <div className="banner-element">
                 <div className="text-wrapper">
                     <span>WI-FI COM MUITO MAIS<br />VELOCIADE PARA UMA<br />EXPERIÊNCIA SEM<br />INTERRUPÇÕES!</span>
-                    <a href="#contact">Internet Fibra</a>
+                    <div>
+                        <a href="#contact">Clique aqui</a>
+                        <span>para ter a nossa fibra</span>
+                    </div>
                 </div>
             </div>
         </div>

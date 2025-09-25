@@ -12,7 +12,7 @@ const SubBanner = () => {
                 <img src={caioTestimonialImg} alt="" />
             </div>
             <div className="infomercial-wrapper">
-                <span className="title">QUANTAS VEZES A CONEXÃO TRAVOU<br />E ATRAPALHOU O SEU DIA?</span>
+                <span className="title">QUANTAS VEZES A CONEXÃO TRAVOU E ATRAPALHOU O SEU DIA?</span>
 
                 <div className="aligner vertical main">
                     <div className="aligner horizontal">

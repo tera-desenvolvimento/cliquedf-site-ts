@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import logoHeaderImg from "../img/logo-header.svg";
 
 import "../style/header.css";
 
 const Header = () => {
+    const [menuOpened, setMenuOpened] = useState(false);
+    const [supMenuScrolled, setSupMenuScrolled] = useState(false);
+
+    window.addEventListener("scroll", () => {
+        const pixelsScrolled = window.scrollY;
+
+        if (pixelsScrolled > 85) {
+            setSupMenuScrolled(true);
+        } else {
+            setSupMenuScrolled(false)
+        }
+    });
+
     return (
         <React.Fragment>
             <div className="central-header">
@@ -64,7 +77,30 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
+
+                <button className="menu-button-mob" onClick={() => setMenuOpened(!menuOpened)}>
+                    <svg height="20" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.5" y1="1.5" x2="30.5" y2="1.5" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="1.5" y1="11.5" x2="30.5" y2="11.5" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="1.5" y1="21.5" x2="30.5" y2="21.5" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    </svg>  
+                </button>
             </header>
+
+            <nav className={`menu-container-mob ${menuOpened ? "open" : ""} ${supMenuScrolled ? "scrolled" : ""}`}>
+                <div className="menu-item">
+                    <a href="#">Home</a>
+                </div>
+                <div className="menu-item">
+                    <a href="#about">Sobre nós</a>
+                </div>
+                <div className="menu-item">
+                    <a href="#social">Social</a>
+                </div>
+                <div className="menu-item">
+                    <a href="#plans">Planos</a>
+                </div>
+            </nav>
         </React.Fragment>
     )
 }

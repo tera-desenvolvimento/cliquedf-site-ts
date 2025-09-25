@@ -85,11 +85,83 @@
     
 }
 
+.header-container .menu-button-mob {
+    background-color: transparent;
+    display: none;
+}
+
 .header-container .menu-wrapper .menu-list .menu-item.whatsapp-link a:hover {
     color: #9CC748;
     background-color: #000000;
 
     path {
         stroke: #9CC748;
+    }
+}
+
+.menu-container-mob {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 150px;
+    right: -210px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-container-mob.open {
+    right: 10px;
+}
+
+.menu-container-mob.open.scrolled {
+    top: 70px;
+}
+
+.menu-container-mob .menu-item {
+    background-color: #9CC748;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.menu-container-mob .menu-item a {
+    font-family: "cocogoose-semilight";
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: end;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .central-header {
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .central-header a {
+        padding: 20px;
+        font-size: 10px;
+
+        svg {
+            height: 16px;
+        }
+    }
+
+    .header-container .logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-container .logo-wrapper .logo-img {
+        height: 40px;
+    }
+
+    .header-container .menu-wrapper {
+        display: none;
+    }
+
+    .header-container .menu-button-mob {
+        display: block;
     }
 }

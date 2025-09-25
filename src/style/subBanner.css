@@ -33,6 +33,7 @@
     color: #9CC748;
     font-size: 3rem;
     letter-spacing: 2px;
+    max-width: 650px;
 }
 
 .sub-banner-container .infomercial-wrapper .icon {
@@ -49,4 +50,29 @@
 
 .sub-banner-container .infomercial-wrapper .aligner span {
     font-family: "poppins-regular";
+}
+
+@media (max-width: 768px) {
+    .sub-banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .sub-banner-container .infomercial-wrapper, .sub-banner-container .testimonial-wrapper {
+        padding: 20px;
+    }
+
+    .sub-banner-container .infomercial-wrapper .title {
+        font-size: 2.3rem;
+        text-align: center;
+        letter-spacing: unset;
+    }
+
+    .sub-banner-container .infomercial-wrapper .aligner span {
+        font-size: 14px;
+    }
+
+    .sub-banner-container .testimonial-wrapper img {
+        width: 100%;
+    }
+
 }

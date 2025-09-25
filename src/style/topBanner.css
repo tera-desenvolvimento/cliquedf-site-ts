@@ -24,14 +24,19 @@
     height: -webkit-fill-available;
     justify-content: center;
     padding-left: 90px;
-        border-radius: 50px;
-        background: linear-gradient(270deg, transparent, #0101019e);
+    border-radius: 50px;
+    background: linear-gradient(270deg, transparent, #0101019e);
 }
 
 .top-banner-container .banner-element .text-wrapper span {
     font-family: "amsipro-ultra";
     color: #ffffff;
     font-size: 3rem;
+}
+
+.top-banner-container .banner-element .text-wrapper div span {
+    font-family: "cocogoose-regular";
+    font-size: 1rem;
 }
 
 .top-banner-container .banner-element .text-wrapper a {
@@ -42,4 +47,42 @@
     width: fit-content;
     color: #ffffff;
     border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .top-banner-container {
+        padding: 20px;
+    }
+
+    .top-banner-container .banner-element {
+        width: 90vw;
+        height: 400px;
+        background-position: center;
+    }
+
+    .top-banner-container .banner-element .text-wrapper {
+        padding: 0 40px;
+        justify-content: flex-end;
+        
+    }
+
+    .top-banner-container .banner-element .text-wrapper span {
+        font-size: 1.7rem;
+    }
+
+    .top-banner-container .banner-element .text-wrapper div {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
+
+    .top-banner-container .banner-element .text-wrapper div a {
+        padding: 10px;
+    }
+
+    .top-banner-container .banner-element .text-wrapper div span {
+        font-size: .8rem;
+    }
 }

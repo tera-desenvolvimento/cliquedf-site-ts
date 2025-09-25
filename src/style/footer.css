@@ -69,3 +69,23 @@
     color: #ffffff;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .footer-container .top-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer-container .top-wrapper .menu-container {
+        flex-direction: column;
+    }
+
+    .footer-container .top-wrapper .menu-container .menu-wrapper {
+        align-items: center;
+    }
+
+    .footer-container .top-wrapper .contact-container .contact-wrapper {
+        align-items: center;
+    }
+}
