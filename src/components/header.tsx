@@ -20,16 +20,16 @@ const Header = () => {
     return (
         <React.Fragment>
             <div className="central-header">
-                <a href="#assinante">
+                <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
                     <svg height="20" viewBox="0 0 41 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.2821 27.3206C27.7498 27.3206 33.8035 21.2669 33.8035 13.7992C33.8035 6.33154 27.7498 0.277802 20.2821 0.277802C12.8145 0.277802 6.76071 6.33154 6.76071 13.7992C6.76071 21.2669 12.8145 27.3206 20.2821 27.3206Z" fill="black"/>
                         <path d="M20.2821 31.8257C9.08575 31.8382 0.0124651 40.9114 0 52.1078C0 53.3524 1.00893 54.3613 2.25353 54.3613H38.3106C39.5552 54.3613 40.5641 53.3524 40.5641 52.1078C40.5518 40.9114 31.4785 31.8381 20.2821 31.8257Z" fill="black"/>
                     </svg>
 
-                    <span>Central do Assinante</span>
+                    <span>Fale com o suporte</span>
                 </a>
 
-                <a href="#boleto">
+                <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
                     <svg height="20" viewBox="0 0 46 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.4512 18.2072H44.2674C43.4764 16.1114 42.2477 14.2084 40.663 12.6251L32.7701 4.72769C31.185 3.14486 29.2815 1.91694 27.1857 1.12558V15.9418C27.1857 17.1929 28.2 18.2072 29.4512 18.2072Z" fill="black"/>
                         <path d="M45.2551 22.738H29.4512C25.6976 22.738 22.6547 19.6952 22.6547 15.9416V0.137684C22.29 0.112729 21.9253 0.083313 21.5559 0.083313H11.3273C5.07449 0.0908528 0.00743359 5.15791 0 11.4107V43.1274C0.00743359 49.3801 5.07449 54.4473 11.3273 54.4547H33.982C40.2349 54.4473 45.3019 49.3801 45.3095 43.1273V23.8368C45.3095 23.4676 45.28 23.1028 45.2551 22.738Z" fill="black"/>
@@ -46,7 +46,7 @@ const Header = () => {
                 <nav className="menu-wrapper">
                     <ul className="menu-list">
                         <li className="menu-item">
-                            <a href="#home" className="menu-link">
+                            <a href="/" className="menu-link">
                                 Home
                             </a>
                         </li>
@@ -56,7 +56,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="menu-item">
-                            <a href="#social" className="menu-link">
+                            <a href="https://www.instagram.com/cliquedftelecom/" target="_blank" rel="noreferrer" className="menu-link">
                                 Social
                             </a>
                         </li>
@@ -66,7 +66,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="menu-item whatsapp-link">
-                            <a href="#contact">
+                            <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
                                 <svg width="30" viewBox="0 0 263 263" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 248.78L35.5417 199.168C19.0611 175.774 11.6848 147.169 14.797 118.722C17.9091 90.2744 31.2958 63.9409 52.4448 44.6628C73.5937 25.3848 101.051 14.4875 129.664 14.016C158.277 13.5445 186.079 23.5312 207.851 42.102C229.624 60.6728 243.871 86.551 247.919 114.88C251.966 143.209 245.536 172.042 229.836 195.967C214.135 219.892 190.243 237.265 162.643 244.825C135.042 252.385 105.632 249.614 79.9305 237.03L14 248.78Z" stroke="#ffffff" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M92.333 105.169C92.333 106.9 93.0207 108.56 94.2449 109.785C95.4691 111.009 97.1295 111.697 98.8608 111.697C100.592 111.697 102.252 111.009 103.477 109.785C104.701 108.56 105.389 106.9 105.389 105.169V92.1132C105.389 90.3819 104.701 88.7216 103.477 87.4974C102.252 86.2732 100.592 85.5854 98.8608 85.5854C97.1295 85.5854 95.4691 86.2732 94.2449 87.4974C93.0207 88.7216 92.333 90.3819 92.333 92.1132V105.169ZM92.333 105.169C92.333 122.482 99.2105 139.085 111.452 151.327C123.694 163.569 140.298 170.447 157.611 170.447M157.611 170.447H170.666C172.398 170.447 174.058 169.759 175.282 168.535C176.506 167.31 177.194 165.65 177.194 163.919C177.194 162.187 176.506 160.527 175.282 159.303C174.058 158.079 172.398 157.391 170.666 157.391H157.611C155.879 157.391 154.219 158.079 152.995 159.303C151.771 160.527 151.083 162.187 151.083 163.919C151.083 165.65 151.771 167.31 152.995 168.535C154.219 169.759 155.879 170.447 157.611 170.447Z" stroke="#ffffff" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
@@ -89,13 +89,13 @@ const Header = () => {
 
             <nav className={`menu-container-mob ${menuOpened ? "open" : ""} ${supMenuScrolled ? "scrolled" : ""}`}>
                 <div className="menu-item">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                 </div>
                 <div className="menu-item">
                     <a href="#about">Sobre nós</a>
                 </div>
                 <div className="menu-item">
-                    <a href="#social">Social</a>
+                    <a href="https://www.instagram.com/cliquedftelecom/" target="_blank" rel="noreferrer">Social</a>
                 </div>
                 <div className="menu-item">
                     <a href="#plans">Planos</a>

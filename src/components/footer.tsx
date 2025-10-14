@@ -14,32 +14,31 @@ const Footer = () => {
                     <div className="menu-wrapper">
                         <b>Links Rápidos</b>
 
-                        <a href="#">Home</a>
-                        <a href="#">Sobre</a>
-                        <a href="#">Planos</a>
-                        <a href="#">Contato</a>
+                        <a href="/">Home</a>
+                        <a href="#plans">Planos</a>
+                        <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Contato</a>
+                        <a href="https://www.instagram.com/cliquedftelecom/" target="_blank" rel="noreferrer">Social</a>
                     </div>
                     <div className="menu-wrapper">
                         <b>Atendimento</b>
 
-                        <a href="#">Portal do cliente</a>
-                        <a href="#">Suporte</a>
-                        <a href="#">Teste sua internet aqui</a>
-                        <a href="#">Contrate</a>
+                        <a href="https://sistema.cliquedf.com.br/central_assinante_web/login" target="_blank" rel="noreferrer">Portal do cliente</a>
+                        <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Suporte</a>
+                        <a href="https://www.speedtest.net/pt" target="_blank" rel="noreferrer">Teste sua internet aqui</a>
+                        <a href="https://cliquedf.contratoonline.tec.br" target="_blank" rel="noreferrer">Contrate</a>
                     </div>
                 </div>
                 <div className="contact-container">
                     <div className="contact-wrapper">
                         <b>Redes sociais</b>
 
-                        <a href="#">Instagram</a>
+                        <a href="https://www.instagram.com/cliquedftelecom/" target="_blank" rel="noreferrer">Instagram</a>
                     </div>
 
                     <div className="contact-wrapper">
                         <b>Contato</b>
 
-                        <a href="#">79 99999-9999</a>
-                        <a href="#">79 3344-5566</a>
+                        <a href="tel:+5579996645668">79 99664-5668</a>
                     </div>
                 </div>
             </div>
