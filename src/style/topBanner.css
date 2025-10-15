@@ -51,9 +51,16 @@
     text-decoration: none;
     padding: 10px 30px;
     background-color: #9CC748;
+    border: 2px solid #9CC748;
     width: fit-content;
     color: #ffffff;
     border-radius: 20px;
+    transition: ease-in-out .3s all;
+}
+
+.top-banner-container .banner-element .text-wrapper a:hover {
+    background-color: transparent;
+    border: 2px solid #9CC748;
 }
 
 @media (max-width: 768px) {

@@ -29,7 +29,7 @@ const Header = () => {
                     <span>Fale com o suporte</span>
                 </a>
 
-                <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
+                <a href="https://cliquedf.boletofacil.tec.br/" target="_blank" rel="noreferrer">
                     <svg height="20" viewBox="0 0 46 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.4512 18.2072H44.2674C43.4764 16.1114 42.2477 14.2084 40.663 12.6251L32.7701 4.72769C31.185 3.14486 29.2815 1.91694 27.1857 1.12558V15.9418C27.1857 17.1929 28.2 18.2072 29.4512 18.2072Z" fill="black"/>
                         <path d="M45.2551 22.738H29.4512C25.6976 22.738 22.6547 19.6952 22.6547 15.9416V0.137684C22.29 0.112729 21.9253 0.083313 21.5559 0.083313H11.3273C5.07449 0.0908528 0.00743359 5.15791 0 11.4107V43.1274C0.00743359 49.3801 5.07449 54.4473 11.3273 54.4547H33.982C40.2349 54.4473 45.3019 49.3801 45.3095 43.1273V23.8368C45.3095 23.4676 45.28 23.1028 45.2551 22.738Z" fill="black"/>
@@ -48,11 +48,6 @@ const Header = () => {
                         <li className="menu-item">
                             <a href="/" className="menu-link">
                                 Home
-                            </a>
-                        </li>
-                        <li className="menu-item">
-                            <a href="#about" className="menu-link">
-                                Sobre nós
                             </a>
                         </li>
                         <li className="menu-item">

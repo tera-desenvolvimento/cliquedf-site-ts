@@ -7,7 +7,7 @@ const TopBanner = () => {
                 <div className="text-wrapper">
                     <span>WI-FI COM MUITO MAIS<br />VELOCIADE PARA UMA<br />EXPERIÊNCIA SEM<br />INTERRUPÇÕES!</span>
                     <div>
-                        <a href="#contact">Clique aqui</a>
+                        <a href="https://cliquedf.contratoonline.tec.br/" target="_blank" rel="noreferrer">Clique aqui</a>
                         <span>para ter a nossa fibra</span>
                     </div>
                 </div>

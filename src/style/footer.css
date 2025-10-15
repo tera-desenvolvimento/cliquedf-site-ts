@@ -70,6 +70,12 @@
     font-size: 14px;
 }
 
+.footer-container .bottom-wrapper img {
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
 @media (max-width: 768px) {
     .footer-container .top-wrapper {
         flex-direction: column;
