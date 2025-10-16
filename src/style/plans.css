@@ -13,21 +13,22 @@
 }
 
 .plans-container .header-wrapper b {
-    font-family: "hartone-softed";
+    font-family: "sora-extrabold";
     font-size: 45px;
-    font-weight: 100;
+    letter-spacing: -1px;
 }
 
 .plans-container .header-wrapper span {
-    font-family: "poppins-regular";
-    color: #9CC748;
+    font-family: "poppins-bold";
+    font-size: 20px;
+    color: #6FCF27;
 }
 
 .plans-container .plans-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .plans-container .plans-wrapper .plans-row {
@@ -36,24 +37,24 @@
 }
 
 .plans-container .plans-wrapper .title {
-    font-family: "hartone-softed";
+    font-family: "sora-extrabold";
     font-size: 45px;
-    font-weight: 100;
+    letter-spacing: -1px;
 }
 
 .plans-container .plans-wrapper .plans-row .plan-element {
     display: flex;
     flex-direction: column;
     align-items: center;    
-    border: 3px solid #FED32C;
+    border: 3px solid #6FCF27;
     padding: 25px;
     border-radius: 15px;
     gap: 15px;
 }
 
 .plans-container .plans-wrapper .plans-row .plan-element b {
-    font-family: "hartone-softed";
-    font-size: 45px;
+    font-family: "sora-extrabold";
+    font-size: 30px;
     font-weight: 100;
 }
 
@@ -74,35 +75,45 @@
 }
 
 .plans-container .plans-wrapper .plans-row .plan-element .buttons-wrapper span {
-    font-family: "poppins-bold";
-    font-size: 30px;
-    color: #9CC748;
+    font-family: "sora-bold";
+    font-size: 20px;
+    background-color: #6FCF27;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    width: -webkit-fill-available;
+    border-radius: 25px;
 }
 
 .plans-container .plans-wrapper .plans-row .plan-element .buttons-wrapper a {
-    font-family: "poppins-bold";
+    font-family: "sora-bold";
     font-size: 16px;
     text-decoration: none;
-    padding: 5px 30px;
-    background-color: #9CC748;
-    border: 2px solid #9CC748;
+    padding: 5px;
+    width: -webkit-fill-available;
+    background-color: transparent;
+    border: 2px solid #6FCF27;
     width: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     border-radius: 25px;
     transition: ease-in-out .3s all;
 }
 
 .plans-container .plans-wrapper .plans-row .plan-element .buttons-wrapper a:hover {
-    background-color: transparent;
-    border: 2px solid #9CC748;
-    color: #000000;
+    background-color: #6FCF27;
+    border: 2px solid #6FCF27;
+    color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
     .plans-container .header-wrapper {
         padding: 20px;
         text-align: center;
+    }
+
+    .plans-container .header-wrapper span {
+        font-size: unset;
     }
 
     .plans-container .plans-wrapper {

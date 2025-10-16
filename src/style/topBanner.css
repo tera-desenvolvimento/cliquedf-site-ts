@@ -42,16 +42,16 @@
 }
 
 .top-banner-container .banner-element .text-wrapper div span {
-    font-family: "cocogoose-regular";
+    font-family: "sora-bold";
     font-size: 1rem;
 }
 
 .top-banner-container .banner-element .text-wrapper a {
-    font-family: "cocogoose-regular";
+    font-family: "sora-bold";
     text-decoration: none;
     padding: 10px 30px;
-    background-color: #9CC748;
-    border: 2px solid #9CC748;
+    background-color: #6FCF27;
+    border: 2px solid #6FCF27;
     width: fit-content;
     color: #ffffff;
     border-radius: 20px;
@@ -60,7 +60,7 @@
 
 .top-banner-container .banner-element .text-wrapper a:hover {
     background-color: transparent;
-    border: 2px solid #9CC748;
+    border: 2px solid #6FCF27;
 }
 
 @media (max-width: 768px) {

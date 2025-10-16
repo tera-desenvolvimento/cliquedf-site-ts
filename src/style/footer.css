@@ -33,7 +33,7 @@
 
 .footer-container .top-wrapper .menu-container .menu-wrapper b, .footer-container .top-wrapper .contact-container .contact-wrapper b {
     font-family: "poppins-bold";
-    color: #9CC748;
+    color: #6FCF27;
 }
 
 .footer-container .top-wrapper .menu-container .menu-wrapper a, .footer-container .top-wrapper .contact-container .contact-wrapper a {
@@ -45,7 +45,7 @@
 }
 
 .footer-container .top-wrapper .menu-container .menu-wrapper a:hover {
-    color: #9CC748;
+    color: #6FCF27;
 }
 
 .footer-container .top-wrapper .contact-container {

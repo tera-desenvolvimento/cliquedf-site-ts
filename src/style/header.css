@@ -1,5 +1,5 @@
 .central-header {
-    background-color: #9CC748;
+    background-color: #6FCF27;
     padding: 10px 30px;
     display: flex;
     gap: 20px;
@@ -12,7 +12,7 @@
     display: flex;
     gap: 10px;
     text-decoration: none;
-    font-family: "poppins-bold";
+    font-family: "sora-bold";
     font-size: 12px;
     color: #000000;
     transition: ease-in-out .2s all;
@@ -53,30 +53,31 @@
 .header-container .menu-wrapper .menu-list {
     list-style: none;
     display: flex;
-    gap: 30px;
-    font-family: "cocogoose-semilight";
+    gap: 50px;
+    font-family: "sora-semibold";
     align-items: center;
 }
 
 .header-container .menu-wrapper .menu-list .menu-item a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
     transition: ease-in-out .2s all;
 }
 
 .header-container .menu-wrapper .menu-list .menu-item a:hover {
-    color: #9CC748;
+    color: #6FCF27;
 }
 
 .header-container .menu-wrapper .menu-list .menu-item.whatsapp-link a {
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: #9CC748;
+    font-size: 14px;
+    background-color: #6FCF27;
     padding: 10px 20px;
     border-radius: 25px;
-    border: 2px solid #9CC748;
+    border: 2px solid #6FCF27;
     transition: ease-in-out .2s all;
 
     path {
@@ -91,11 +92,11 @@
 }
 
 .header-container .menu-wrapper .menu-list .menu-item.whatsapp-link a:hover {
-    color: #9CC748;
+    color: #6FCF27;
     background-color: #000000;
 
     path {
-        stroke: #9CC748;
+        stroke: #6FCF27;
     }
 }
 
@@ -119,13 +120,13 @@
 }
 
 .menu-container-mob .menu-item {
-    background-color: #9CC748;
+    background-color: #6FCF27;
     padding: 5px;
     border-radius: 6px;
 }
 
 .menu-container-mob .menu-item a {
-    font-family: "cocogoose-semilight";
+    font-family: "sora-bold";
     display: block;
     text-decoration: none;
     color: #ffffff;
@@ -140,7 +141,6 @@
     }
 
     .central-header a {
-        padding: 20px;
         font-size: 10px;
 
         svg {

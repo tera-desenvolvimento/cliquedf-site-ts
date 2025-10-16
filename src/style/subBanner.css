@@ -28,11 +28,11 @@
 }
 
 .sub-banner-container .infomercial-wrapper .title {
-    font-family: "hartone-softed";
+    font-family: "sora-extrabold";
     font-weight: 100;
-    color: #9CC748;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    color: #6FCF27;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
     max-width: 650px;
 }
 
@@ -42,9 +42,9 @@
 }
 
 .sub-banner-container .infomercial-wrapper .aligner b {
-    font-family: "hartone-softed";
+    font-family: "sora-bold";
     font-weight: 100;
-    color: #9CC748;
+    color: #6FCF27;
     font-size: 1.6rem;
 }
 
