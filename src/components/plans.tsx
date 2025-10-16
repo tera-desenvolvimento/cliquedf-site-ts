@@ -66,7 +66,7 @@ const Plans = () => {
 
                 </div>
 
-                <b className="title">INTERNET + TV</b>
+                <b className="title">Internet + TV  </b>
                 <div className="plans-row">
                     <div className="plan-element">
                         <b>200 MEGA</b>

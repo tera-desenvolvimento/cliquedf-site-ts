@@ -26,7 +26,7 @@ const Footer = () => {
 
                             <a href="https://sistema.cliquedf.com.br/central_assinante_web/login" target="_blank" rel="noreferrer">Portal do cliente</a>
                             <a href="https://api.whatsapp.com/send/?phone=557996645668&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Suporte</a>
-                            <a href="https://www.speedtest.net/pt" target="_blank" rel="noreferrer">Teste sua internet aqui</a>
+                            <a href="https://cliquedf.speedtestcustom.com/" target="_blank" rel="noreferrer">Teste sua internet aqui</a>
                             <a href="https://cliquedf.contratoonline.tec.br" target="_blank" rel="noreferrer">Contrate</a>
                         </div>
                     </div>
