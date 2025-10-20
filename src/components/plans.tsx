@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+import { loadPlansData, IPlan } from "../controllers/loadPlansData.controller"
 
 import "../style/plans.css";
 
 const Plans = () => {
+    const [plans, setPlans] = useState<IPlan[] | null>(null);
+
+    const fetchPlansData = async () => {
+        const data = await loadPlansData();
+        setPlans(data.plano);
+    };
+
+    useEffect(() => {
+        fetchPlansData();
+    }, []);
+
     return (
         <div className="plans-container" id="plans">
             <div className="header-wrapper">
@@ -12,141 +25,47 @@ const Plans = () => {
             <div className="plans-wrapper">
                 <b className="title">Internet</b>
                 <div className="plans-row">
-                    <div className="plan-element">
-                        <b>200 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 200Mbps</span>
-                            <span>Upload: 100Mbps</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 69,90</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=142" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
 
-                    <div className="plan-element">
-                        <b>500 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 500Mbps</span>
-                            <span>Upload: 250Mbps</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 89,90</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=158" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
-
-                    <div className="plan-element">
-                        <b>700 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 700Mbps</span>
-                            <span>Upload: 350Mbps</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 100,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=150" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
-
-                    <div className="plan-element">
-                        <b>1000 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 1000Mbps</span>
-                            <span>Upload: 500Mbps</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 130,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=159" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>  
-
-                </div>
+                    {plans && plans.map((plan: IPlan) => (
+                        plan.extra === "Apenas internet" ?
+                            <div className="plan-element" id={`plan-${plan.id_plano}`}>
+                                <b>{plan.nome}</b>
+                                <div className="benefits-wrapper">
+                                    <span>Download: {plan.download}</span>
+                                    <span>Upload: {plan.upload}</span>
+                                    <span>Instalação {plan.descricaoSla}</span>
+                                </div>
+                                <div className="buttons-wrapper">
+                                    <span>R$ {plan.valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</span>
+                                    <a href={`https://cliquedf.contratoonline.tec.br/planos?plano=${plan.id_plano}`} target="_blank" rel="noreferrer">Assine agora</a>
+                                </div>
+                            </div>
+                        : null
+                    ))}
+                </div>  
 
                 <b className="title">Internet + TV  </b>
                 <div className="plans-row">
-                    <div className="plan-element">
-                        <b>200 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 200Mbps</span>
-                            <span>Upload: 100Mbps</span>
-                            <span>+ ITTV Aberto</span>
-                            <span>+ Qnutri</span>
-                            <span>+ Deezer</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 79,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=145" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
 
-                    <div className="plan-element">
-                        <b>500 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 500Mbps</span>
-                            <span>Upload: 250Mbps</span>
-                            <span>+ ITTV Aberto</span>
-                            <span>+ Looke Kids</span>
-                            <span>+ Play Kids</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 95,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=151" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
-
-                    <div className="plan-element">
-                        <b>500 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 500Mbps</span>
-                            <span>Upload: 250Mbps</span>
-                            <span>+ ITTV Aberto</span>
-                            <span>+ Max</span>
-                            <span>+ Deezer</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 97,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=146" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
-
-                    <div className="plan-element">
-                        <b>700 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 700Mbps</span>
-                            <span>Upload: 350Mbps</span>
-                            <span>+ ITTV Aberto</span>
-                            <span>+ Max</span>
-                            <span>+ Looke</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 115,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=147" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
-
-                    <div className="plan-element">
-                        <b>1000 MEGA</b>
-                        <div className="benefits-wrapper">
-                            <span>Download: 1000Mbps</span>
-                            <span>Upload: 500Mbps</span>
-                            <span>+ ITTV Aberto</span>
-                            <span>+ Max</span>
-                            <span>+ Deezer</span>
-                            <span>Instalação em até 48h</span>
-                        </div>
-                        <div className="buttons-wrapper">
-                            <span>R$ 147,00</span>
-                            <a href="https://cliquedf.contratoonline.tec.br/planos?plano=148" target="_blank" rel="noreferrer">Assine agora</a>
-                        </div>
-                    </div>
+                    {plans && plans.map((plan: IPlan) => (
+                        plan.extra !== "Apenas internet" ?
+                            <div className="plan-element" id={`plan-${plan.id_plano}`}>
+                                <b>{plan.nome}</b>
+                                <div className="benefits-wrapper">
+                                    <span>Download: {plan.download}</span>
+                                    <span>Upload: {plan.upload}</span>
+                                    { plan.extra.split("+").map((benefit) => (
+                                        <span>+ {benefit}</span>
+                                    )) }
+                                    <span>Instalação {plan.descricaoSla}</span>
+                                </div>
+                                <div className="buttons-wrapper">
+                                    <span>R$ {plan.valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</span>
+                                    <a href={`https://cliquedf.contratoonline.tec.br/planos?plano=${plan.id_plano}`} target="_blank" rel="noreferrer">Assine agora</a>
+                                </div>
+                            </div>
+                        : null
+                    ))}
                 </div>
             </div>
         </div>
